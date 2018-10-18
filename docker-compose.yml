@@ -6,7 +6,7 @@ services:
     ports:
       - '80:80'
     volumes:
-      - '.:/var/www/'
+      - './sample:/var/www/'
       - './vhost:/etc/apache2/sites-enabled:ro'
     links:
       - mysql
